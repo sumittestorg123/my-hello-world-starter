@@ -80,7 +80,7 @@ The Decoupled Kit starters include a number of scripts defined in the
 `package.json`. To list all of these scripts, `cd` into your starter's directory
 and in a terminal use the `npm run` command.
 
-Some commands include:
+Some commands include:..
 
 ### `dev`
 
