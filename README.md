@@ -99,7 +99,7 @@ Front-End Sites.
 
 ### `test`
 
-Runs the tests.
+Runs the tests..
 
 ### `update-snapshots`
 
