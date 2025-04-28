@@ -15,4 +15,7 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
+  // Print all environment variables
+  console.log('Environment Variables:');
+  console.log(process.env);
 });
