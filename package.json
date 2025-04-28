@@ -12,11 +12,11 @@
 		"node": "18"
 	},
 	"scripts": {
-		"dev": "PANTHEON_CMS_ENDPOINT=dev-ds-demo.pantheonsite.io next dev",
-		"build": "PANTHEON_CMS_ENDPOINT=dev-ds-demo.pantheonsite.io npm run decoupled-kit-health-check && PANTHEON_CMS_ENDPOINT=dev-ds-demo.pantheonsite.io next build && cp -r .next/static .next/standalone/.next",
-		"start": "PANTHEON_CMS_ENDPOINT=dev-ds-demo.pantheonsite.io node .next/standalone/server.js",
-		"build:mono": "PANTHEON_CMS_ENDPOINT=dev-ds-demo.pantheonsite.io next build",
-		"start:mono": "PANTHEON_CMS_ENDPOINT=dev-ds-demo.pantheonsite.io next start",
+		"dev": "next dev",
+		"build": "npm run decoupled-kit-health-check && next build && cp -r .next/static .next/standalone/.next",
+		"start": "node .next/standalone/server.js",
+		"build:mono": "next build",
+		"start:mono": "next start",
 		"lint": "next lint",
 		"lint:fix": "next lint --fix && npm run prettier:fix",
 		"prettier": "prettier '**/*.{js,jsx,md}' --check --ignore-path .prettierignore",
