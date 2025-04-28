@@ -13,7 +13,7 @@
 	},
 	"scripts": {
 		"dev": "next dev",
-		"build": "echo $PANTHEON_CMS_ENDPOINT && npm run decoupled-kit-health-check && echo $PANTHEON_CMS_ENDPOINT && next build && echo $PANTHEON_CMS_ENDPOINT && cp -r .next/static .next/standalone/.next",
+		"build": "PANTHEON_CMS_ENDPOINT=$PANTHEON_CMS_ENDPOINT && next build && echo $PANTHEON_CMS_ENDPOINT && cp -r .next/static .next/standalone/.next",
 		"start": "node .next/standalone/server.js",
 		"build:mono": "next build",
 		"start:mono": "next start",
@@ -24,7 +24,7 @@
 		"test": "vitest run",
 		"update-snapshots": "vitest run --update --silent",
 		"coverage": "vitest run --coverage",
-		"decoupled-kit-health-check": "echo $PANTHEON_CMS_ENDPOINT && npx --prefer-offline @pantheon-systems/decoupled-kit-health-check drupal"
+		"decoupled-kit-health-check": "npx --prefer-offline @pantheon-systems/decoupled-kit-health-check drupal"
 	},
 	"dependencies": {
 		"@pantheon-systems/drupal-kit": "4.6.5",
