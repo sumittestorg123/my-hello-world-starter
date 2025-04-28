@@ -24,7 +24,7 @@
 		"test": "vitest run",
 		"update-snapshots": "vitest run --update --silent",
 		"coverage": "vitest run --coverage",
-		"decoupled-kit-health-check": "npx --prefer-offline @pantheon-systems/decoupled-kit-health-check drupal"
+		"decoupled-kit-health-check": "echo $PANTHEON_CMS_ENDPOINT && npx --prefer-offline @pantheon-systems/decoupled-kit-health-check drupal"
 	},
 	"dependencies": {
 		"@pantheon-systems/drupal-kit": "4.6.5",
