@@ -13,7 +13,7 @@
 	},
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build && cp -r .next/static .next/standalone/.next",
+		"build": "echo $PANTHEON_CMS_ENDPOINT && next build && cp -r .next/static .next/standalone/.next",
 		"start": "node .next/standalone/server.js",
 		"build:mono": "next build",
 		"start:mono": "next start",
